@@ -23,7 +23,8 @@
     "migrate": "medusa db:migrate",
     "migration:generate": "medusa db:generate",
     "migration:run": "medusa db:migrate",
-    "migration:revert": "medusa db:migrate:revert"
+    "migration:revert": "medusa db:migrate:revert",
+    "predeploy": "medusa migrations run && medusa links sync"
   },
   "dependencies": {
     "@medusajs/admin-sdk": "2.8.8",
